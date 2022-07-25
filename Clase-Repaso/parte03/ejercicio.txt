@@ -1,0 +1,25 @@
+
+    ---- Responder las preguntas en un TXT y subirlo a GitHub ---
+
+• Enumerar tres funcionalidades de NPM y describirlas
+    1-Descargar librerias Js
+    NPM Nos permite descargar librerías que nos pueden facilitar el trabajo a la hora de armar un projecto, tambien permite actualizar estas librerias a una version mas nueva
+
+    2-package.json 
+    En el archivo package podemos establecer que librerias queremos descargar y en que version deseamos hacerlo, podemos conservar este archivos para volver a utilizarlo en algun proyecto similar
+
+    3-Compartir
+    Podemos compartir nuestras propias librerias al resto de usuarios
+
+• ¿Cuál es el beneficio de usar un lenguaje con tipos?
+El beneficio que tiene es que nos ayuda a evitar errores al momento de tipear
+ya que establece el tipo de valor que va a tener una variable y no se puede modificar.
+
+• ¿A qué se le llama variable interna? ¿Por qué internas?
+Son variables que posee solo una clase, se denomina internas porque estan dentro de una clase
+
+• Explicar la diferencia entre composición y herencia
+Composicion es cuando una clase esta compuesta de clases mas sencillas, en cambio herencia es cuando queremos agregar funcionalidades a una clase dada/
+
+• Explicar el mecanismo que provee TypeScript para manejar casos en donde los parámetros que le llegan a un método son inválidos
+TypeScript avisa con un mensaje de error que los datos ingresados por parametro son invalidos
