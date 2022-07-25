@@ -1,0 +1,20 @@
+{
+  "name": "ejercicios",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ejemplo.js",
+  "dependencies": {
+    "@types/node": "^17.0.41",
+    "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "@types/readline-sync": "^1.4.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "testScript":  "cd Clase01 & tsc testTarea.ts & node testTarea.js"
+  },
+  "author": "Facundo Mamonde",
+  "license": "ISC",
+  "type": "commonjs"
+}
