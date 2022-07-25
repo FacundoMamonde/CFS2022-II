@@ -1,0 +1,24 @@
+Armar la clase Matriz (similar al de la clase anterior) pero aplicando conceptos de abstracción y encapsulamiento.
+
+
+------ Abstracción --------
+
+• Desde afuera se interactúa con el objeto a través de las funciones (métodos) que provee
+• No hace falta saber desde afuera cómo está implementada la función → Abstracción
+• Alcanza con saber que una determinada clase provee una determinada funcionalidad y listo
+
+
+---- Encapsulamiento ------
+
+• Lo que interesa conocer de una clase son las funciones que provee
+• Desde el punto de vista del usuario de una clase, las variables internas no le interesan → por lo tanto no debería poder acceder/modificar dichas variables
+• La forma correcta es que se modifique a través de una función
+• Para poder controlar la forma en que se modifica una variable interna
+
+Para poder controlar a qué cosas se puede acceder y a qué cosas no, existen dos palabras especiales:
+• public → cualquiera puede acceder
+• private → solamente dentro de la clase
+• Cuando no se especifica ninguna de las dos, automáticamente es “public”
+• Siempre se recomienda especificar alguna de las dos, para que el código sea más legible
+
+
