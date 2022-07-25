@@ -1,0 +1,14 @@
+"use strict";
+exports.__esModule = true;
+var autoCiudad_1 = require("./autoCiudad");
+var autoDeportivo_1 = require("./autoDeportivo");
+var camioneta_1 = require("./camioneta");
+var aCiudad = new autoCiudad_1.AutoCiudad(true, true);
+var camioneta = new camioneta_1.Camioneta(true, false);
+var aDeportivo = new autoDeportivo_1.AutoDeportivo(true, "Monster Energy", true);
+aCiudad.acelerar(3);
+aCiudad.consultaDescapotable();
+camioneta.acelerar(3);
+aDeportivo.acelerar(3);
+aDeportivo.cambiarNeumatico();
+aDeportivo.obtenerPatrocinador();
