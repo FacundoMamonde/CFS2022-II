@@ -1,0 +1,110 @@
+let readlineSync = require('readline-sync');
+import * as fs from 'fs';
+import {Item} from './item';
+
+export class Stock {
+
+    private items:Item[];
+    private carrito:Item[];
+
+    constructor(){
+        this.items = [];
+        this.carrito = [];
+    }
+
+    public getItemCodigo(codigo:string) {
+
+        for(let i=0;i < this.items.length;i++){
+            if (this.items[i].getCodigo() === codigo){
+                console.log("Se encontro el producto!")
+                return this.items[i];
+            } else {
+                console.log("No se encontro el codigo")
+                return "ERROR";
+            }
+        } 
+
+        
+    }
+
+    public addItem(nuevo:Item):void{
+        this.items.push(nuevo);
+    }
+
+    private comparar(item1:Item,item2:Item):boolean{
+        if (item1.getNombre() === item2.getNombre()){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    public addToCart(vendido:Item, cantidad:number):void{
+
+        for(let i=0;i<this.items.length;i++){
+            if (this.comparar(this.items[i],vendido) === true && this.items[i].getStock() >= cantidad){
+                vendido.setStock(cantidad);
+                this.carrito.push(vendido);
+            } 
+        }
+    }
+
+    
+    public finishPurchase():void{
+        console.log("Finalizando compra:");
+        console.log(this.carrito);
+        /// Se establecen variables para utilizar luego
+        let valorUnidades:number;
+        let sumaTotal:number = 0;
+        //// Se recorre el carrito, por cada elemento
+        this.carrito.forEach(e => {
+            /// Se establece cual es el costo total del producto, multiplicando el valor por el stock
+            valorUnidades = (e.getValor() * e.getStock());
+            console.log(` ${e.getStock()} unidades de ${e.getNombre()} : $${valorUnidades} `);
+            sumaTotal = sumaTotal + valorUnidades;
+        });
+
+        console.log("El costo total de todos los productos es de: $"+sumaTotal);
+    }
+
+    public loadItems():string[]{
+    
+        let file:string = fs.readFileSync('./productos.txt', 'utf8');
+        let files:string[] = file.split('\n');
+
+        files.forEach(element =>{
+            let itemInfo:string[] = element.split(';');
+            let nuevoItem = new Item(itemInfo[0],itemInfo[1],Number(itemInfo[2]),Number(itemInfo[3]));
+            this.addItem(nuevoItem);
+        })
+
+        console.log("Se cargaron los productos:");
+        console.log(this.items);
+        return files;
+
+    }
+    
+    public saveTicket():void{}
+
+}
+
+
+
+let kiosko = new Stock();
+kiosko.loadItems();
+
+let compra:string = readlineSync("Ingrese el codigo del articulo que quiere comprar:");
+
+while (compra === "ERROR"){
+    compra = readlineSync("Ingrese el codigo del articulo que quiere comprar:");
+}
+
+
+kiosko.addToCart(compra,5);
+
+
+
+
+
+
+

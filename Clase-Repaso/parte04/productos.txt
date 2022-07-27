@@ -1,0 +1,5 @@
+Caramelo;20;100
+Coca-Cola;300;45
+Galletitas;370;50
+Agua Mineral;260;65
+Pepsi;300;50

@@ -1,0 +1,7 @@
+• Implementar un sistema de gestión de legajos para un colegio. Dicho sistema debe llevar
+registro de los alumnos. A su vez, cada alumno, además de sus datos personales,
+tiene un listado de exámenes rendidos. El sistema debe proveer la siguiente
+funcionalidad:
+    • Obtener el promedio general de un determinado alumno
+    • Obtener el promedio de todos los alumnos inscriptos en el sistema
+    • El alta de los alumnos a elección: a partir de un archivo, a partir de teclado, o creandolos directo en el código
