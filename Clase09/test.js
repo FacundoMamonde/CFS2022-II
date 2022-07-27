@@ -1,0 +1,13 @@
+"use strict";
+exports.__esModule = true;
+var autoCiudad_1 = require("./autoCiudad");
+var autoCarreras_1 = require("./autoCarreras");
+var concesionaria_1 = require("./concesionaria");
+var consesionaria = new concesionaria_1.Concesionaria();
+consesionaria.addAuto(new autoCiudad_1.AutoCiudad("Calle", "Chevrolet", "Astra", 2010, "ABC123"));
+consesionaria.addAuto(new autoCiudad_1.AutoCiudad("Calle", "Ford", "Fiesta", 2012, "ABC124"));
+consesionaria.addAuto(new autoCiudad_1.AutoCiudad("Calle", "Volkswagen", "Gol", 2008, "ABC125"));
+consesionaria.addAuto(new autoCarreras_1.AutoCarreras("Carrera", "Toyota", "Corolla", 2022, "Gazoo Racing"));
+consesionaria.addAuto(new autoCarreras_1.AutoCarreras("Carrera", "Chevrolet", "Cruze", 2022, "Elaion"));
+consesionaria.addAuto(new autoCarreras_1.AutoCarreras("Carrera", "Renault", "Fluence", 2022, "Castrol"));
+consesionaria.printAuto();
