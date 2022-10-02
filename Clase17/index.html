@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 17</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="app">
+
+        <h2>Ejercicio 1</h2>
+        <input type="text" v-on:input="nombreIngresado = $event.target.value"></input>
+
+        <p>Ingrese color rojo, verde o azul:</p>
+        <input type="text" v-on:input="colorIngresado = $event.target.value"></input>
+
+        <h3 v-bind:class="colorIngresado"> {{nombreIngresado}}</h3>
+
+        <h2>Ejercicio 2</h2>
+        <button v-on:click="alternar()">Mostrar / Ocultar</button>
+        <h4 v-show="mostrarboton">Este es el mensaje principal</h4>
+        <h4 v-show="!mostrarboton">Y este el mensaje secundario</h4>
+
+
+
+        <h2>Ejercicio 3</h2>
+
+        <ul>
+            <li v-for="persona in personas">{{ persona.nombre}} - {{ persona.estado }}</li>
+        </ul>
+
+        <h2>Ejercicio 4</h2>
+
+
+        <div id="personitas">
+
+            <app-usuario> </app-usuario>
+        
+         </div>
+        
+        
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
