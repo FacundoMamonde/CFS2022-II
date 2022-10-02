@@ -1,0 +1,406 @@
+body {
+    min-width: 444px;
+}
+
+
+.en{
+    display:none;
+}
+
+/**============= VERSION ESCRITORIO =================**/
+
+@media only screen and (min-width: 601px) {
+
+    #main-container {
+        font-family: 'Poppins', sans-serif;
+        max-width: 800px;
+        min-width: 714px;
+        padding: 0px;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 0px;
+        padding-bottom: 20px;
+        border-radius: 30px;
+        margin-bottom: 30px;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.667);
+    }
+
+    #main-container a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    /*------- HEADER ---------*/
+
+    #header {
+
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 0px;
+    }
+
+    #image-header {
+        width: 800px;
+        height: 200px;
+        position: relative;
+        top: 0;
+        left: 0;
+        border-top-right-radius: 30px;
+        border-top-left-radius: 30px;
+    }
+
+    #image-profile {
+        position: absolute;
+        width: 190px;
+        top: 100px;
+        left: 30px;
+        border-radius: 70%;
+    }
+
+    /* NAV BAR */
+
+    #navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        padding-left: 260px;
+        margin-top: -6px;
+        font-family: 'Lexend Deca', sans-serif;
+    }
+
+    .navlink:hover {
+        cursor: pointer;
+        text-decoration-line: underline;
+    }
+
+    /* ------ TEXTOS ------ */
+    .categoria {
+
+        margin: auto;
+        margin-top: 30px;
+        padding-top: 15px;
+        padding-right: 30px;
+        padding-left: 30px;
+        padding-bottom: 20px;
+        width: 600px;
+        min-width: 500px;
+        margin-bottom: 30px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .categoria h2 {
+        font-size: 22px;
+    }
+
+    .categoria p,
+    li {
+        font-size: 14px;
+    }
+
+    /* ----- ABOUT ME ----- */
+
+    #aboutme {
+        text-align: right;
+    }
+
+    /* --- HABILIDADES --- */
+
+    #habilidades {
+        text-align: center;
+    }
+
+    /* --- REDES ---- */
+
+    #redes {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #redes img {
+        width: 30px;
+        margin: 10px;
+
+    }
+
+    #redes img:hover {
+        cursor: pointer;
+    }
+
+
+    /* --- CONTACTO --- */
+
+
+    #contacto input {
+        width: 300px;
+        margin: auto;
+        font-family: 'Noto Sans Display', sans-serif;
+        font-size: 15px;
+    }
+
+
+    #contacto h2 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    #contacto h3 {
+        font-size: 16px;
+        margin-bottom: 7px;
+    }
+
+    #textarea-consulta {
+        min-width: 400px;
+        max-width: 590px;
+        max-height: 590px;
+        font-family: 'Noto Sans Display', sans-serif;
+        font-size: 15px;
+    }
+
+    #btn-consulta {
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 17px;
+    }
+
+    #btn-consulta:hover {
+        cursor: pointer;
+
+    }
+
+    /** BOTON MODO LIGHT - DARK **/
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**============= VERSION SMARTPHONE =================**/
+@media only screen and (min-width: 144px) and (max-width: 600px) {
+
+    #main-container {
+        font-family: 'Poppins', sans-serif;
+        min-width: 464px;
+        margin-left: -9px;
+        margin-right: -8px;
+    }
+
+    #main-container a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    /* NAV BAR */
+
+    #navbar {
+        font-family: 'Lexend Deca', sans-serif;
+        position: absolute;
+        padding: 20px;
+        top: 0px;
+        width: 100%;
+        min-width: 464px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    #btn-contacto {
+        padding-right: 35px;
+    }
+
+    .navlink:hover {
+        cursor: pointer;
+        text-decoration-line: underline;
+    }
+
+
+
+    /*------- HEADER ---------*/
+
+    #header {
+        position: relative;
+        top: 50px;
+        left: 0px;
+        margin-bottom: 80px;
+    }
+
+    #image-header {
+        width: 800px;
+        height: 200px;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    #image-profile {
+        position: absolute;
+        width: 180px;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.321);
+    }
+
+    /* ------ TEXTOS ------ */
+    .categoria {
+        margin: auto;
+        margin-top: 0px;
+        padding-top: 5px;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 20px;
+        width: 80%;
+        margin-bottom: 30px;
+        border-top-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .categoria h2 {
+        font-size: 22px;
+    }
+
+    .categoria p,
+    li {
+        font-size: 14px;
+    }
+
+    /* ----- ABOUT ME ----- */
+
+    #aboutme {
+        text-align: right;
+    }
+
+    /* --- HABILIDADES --- */
+
+    #habilidades {
+        text-align: center;
+    }
+
+
+    /* --- CONTACTO --- */
+
+
+    #contacto input {
+        width: 50%;
+        margin: auto;
+        font-family: 'Noto Sans Display', sans-serif;
+        font-size: 15px;
+    }
+
+
+    #contacto h2 {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    #contacto h3 {
+        font-size: 16px;
+        margin-bottom: 7px;
+    }
+
+    #textarea-consulta {
+        min-width: 60%;
+        max-width: 98%;
+        min-height: 50px;
+        max-height: 590px;
+        font-family: 'Noto Sans Display', sans-serif;
+        font-size: 15px;
+    }
+
+    #btn-consulta {
+        padding: 10px;
+        margin-top: 10px;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 17px;
+    }
+
+    #btn-consulta:hover {
+        cursor: pointer;
+
+    }
+
+
+    /* --- REDES ---- */
+
+    #redes {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    #redes img {
+        width: 30px;
+        margin: 10px;
+
+    }
+
+    #redes img:hover {
+        cursor: pointer;
+    }
+
+
+
+
+
+}
+
+
+
+
+/** BOTON MODO LIGHT-DARK - Separador**/
+
+.separador{
+    font-size: 20px;
+    font-weight: 100;
+    transform: translateY(-10%);
+    color: rgba(255, 255, 255, 0.293);
+}
+
+#extras {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+#extras *{
+    padding: 4px;
+}
+
+#extras a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#btn-modo:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
