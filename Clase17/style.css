@@ -1,0 +1,24 @@
+.rojo{
+    color: red;
+}
+
+.verde{
+    color:green;
+}
+
+.azul{
+    color:blue;
+}
+
+.personalizado{
+    color:grey;
+}
+
+
+
+
+
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
