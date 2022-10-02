@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API(FETCH) - F1 Drivers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <div id="head-content"> <img src="./f1logo.png" alt="" srcset=""></img>
+        <div><button id="btnAddMenu">Agregar</button>
+            <button id="btnModifyMenu">Modificar</button>
+            <button id="btnDeleteMenu">Eliminar</button>
+        </div>
+    </div>
+
+
+    <div id="addMenuDiv" class="hide">
+        <div id="dataSet">
+            
+            <p>Agregar Piloto</p>
+            <input type="text" name="" id="name" placeholder="Nombre del piloto"></input>
+            <input type="text" name="" id="team" placeholder="Nombre del Equipo"></input>
+            <input type="number" name="" id="number"></input>
+            <input type="text" name="" id="image" placeholder="Image Path"></input>
+            <button id="btnEnviar">Agregar</button>
+            <p id="btnAddMenuExit">cerrar</p>
+        </div>
+    </div>
+
+    <div id="dataDelete" class="hide">
+        <p>Id de Piloto:</p>
+        <input type="number" name="" id="driverDeleteId"></input>
+        <button id="btnDelete">Eliminar</button>
+        <p id="btnDeleteMenuExit" class="btns-exit">cerrar</p>
+    </div>
+
+    <div id="dataModify" class="hide">
+        <p3>Id de Piloto:</p3>
+        <input type="number" id="modifyID"></input>
+        <p3>Nombre:</p3>
+        <input type="text" id="modifyName"></input>
+        <p3>Equipo:</p3>
+        <input type="text" id="modifyTeam"></input>
+        <p3>Imagen:</p3>
+        <input type="text" id="modifyImage"></input>
+        <p3>Numero:</p3>
+        <input type="number" id="modifyNumber"></input>
+        <button id="btnModify">Modificar</button>
+        <p3 id="btnModifyMenuExit">cerrar</p3>
+    </div>
+
+    <div id="showInfo">
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
