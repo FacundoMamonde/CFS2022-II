@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(26, 21, 27);
+}
+
+#main-container {
+    background-color: #283133;
+    color: #DFF6FF;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.667);
+}
+
+/*------- HEADER ---------*/
+
+
+/* NAV BAR */
+
+#navbar {
+    background-color: #111517;
+}
+
+.navlink:hover {
+    cursor: pointer;
+    color: white;
+    text-decoration-line: underline;
+}
+
+/* ------ TEXTOS ------ */
+.categoria {
+    background-color: #191e20;
+    border-right: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+.categoria h2 {
+    color: rgb(255, 255, 255);
+}
+
+/* --- REDES ---- */
+
+#redes img {
+    color: white;
+}
+
+#redes img:hover {
+    filter: invert(100%)
+}
+
+.redes-icon {
+    filter: invert(70%)
+}
+
+
+/* --- CONTACTO --- */
+
+#btn-consulta {
+    background-color: #61422a;
+    color: white;
+}
+
+#btn-consulta:hover {
+    background-color: #7d5d43;
+}
+
+/* --- EXTRAS --- */ 
+
+#extras {
+    color:white;
+}
